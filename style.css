@@ -1,0 +1,210 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7;
+    color: #333;
+    margin: 0;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+/* header */
+.site-header {
+    padding: 15px 0px;
+    background-color: #000000;
+    padding: 20px;
+    border: 2px solid #f89112;
+    text-align: center;
+    background-color: #000;
+    font-family: 'Montserrat', sans-serif;
+    
+}       /* 2 лаб 3 пункт*/
+
+.container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 70px;
+    display: block;
+    
+}
+
+.dealer-menu {
+    display: flex;
+    flex-grow: 1;
+    /* Меню заберет все свободное место */
+    justify-content: space-around;
+    /* Равномерно распределит ссылки */
+    margin-left: 40px;
+    /* Отступ от логотипа */
+}
+
+.dealer-menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    /* Убираем подчеркивание */
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.dealer-menu a:hover {
+    opacity: 0.7;
+}
+
+/* Адаптив для мобильных: если места мало, они станут в колонку */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .dealer-menu {
+        margin-left: 0;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+/* main */
+
+.section-title {
+    color: #f89112;
+    font-size: 38px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+        
+       
+        
+}
+p.description {
+    font-style: italic;
+    text-indent: 26px;
+    /* Абзацний відступ */
+    text-align: justify;
+    /* Вирівнювання по ширині */
+}
+
+/* 6. Псевдоселектор - для посилань (hover) та першої літери */
+a:hover {
+    color: #ff6600;
+    
+}
+
+.highlight::first-letter {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 170%;
+    font-weight: bold;
+    color: #f89112;
+}
+.highlight{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* Основний контейнер для блоку */
+.generator-block {
+    display: flex;
+    align-items: center;
+        /* Вирівнює текст і картинку строго по центру по вертикалі */
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-bottom: 40px;
+    margin-right: 120px;
+    margin-left: 120px;
+    gap: 40px;
+        /* Відстань між текстом та фото */
+}
+
+/* Клас для зміни порядку (Картинка - Текст) */
+.generator-block.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Налаштування контенту */
+.text-content {
+    flex: 1;
+    width: 500px;
+}
+
+.image-content {
+    flex: 1;
+    text-align: center;
+}
+
+.image-content img {
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
+    /* Опціонально: закруглені кути */
+    
+    /* Легка тінь */
+}
+
+/* Оформлення тексту згідно з попереднім завданням */
+.type-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.type-heading::first-letter {
+    color: #ff9933;
+    /* Помаранчева перша літера як на картинці */
+    font-size: 35px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Адаптивність: на мобільних пристроях блоки стануть один під одним */
+@media (max-width: 768px) {
+
+    .generator-block,
+    .generator-block.reverse {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 5%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    /* font: style weight size/line-height family */
+    font: italic 400 14px 'Open Sans', sans-serif;
+    color: #777;
+}
